@@ -1,0 +1,16 @@
+Ideas:
+
+Capacitive touch sensing:
+https://www.youtube.com/watch?v=mWR9Q_pTagw
+
+Direct board interaction (touching traces, running fingers along, etc.)
+
+Interesting sensing capability (light, temperature)
+
+Accelerometer
+
+piezo sound (midi?)
+
+3D printed enclosure - captive nut M4 ~20mm hex socket head screws
+
+traditional gameboy golden ratio box? 

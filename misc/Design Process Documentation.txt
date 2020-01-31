@@ -1,0 +1,9 @@
+I was thinking to myself while riding to work this morning that it might be useful to have a document detailing how I went about this project. Some of this will be written retrospectively, but hopefully most of it will be written as I go. I still have some anxieties about not actually completing this, as I often have big ideas but never really put in the work required to bring them into reality. I've already put in some of the boring work required to bring this shitty gameboy into the world, so that's at least a headstart over most of my other projects.
+
+I had the idea to make this after doing CAB202 last year, where we programmed a teensy-based handheld game console with a screen resolution of 84x48 from memory, which struck me as a strange number. The LCD I have purchased is 128x64, which will hopefully alleviate some of the frustrations I had with the resolution of the CAB202 design. I've also purchased a teensy 3.2, which uses an ARM-based microprocessor rather than an 8-bit RISC which I think is what we were using last time. Making that amplifier for Matt at Ionode gave me the necessary skills in Eagle to create a custom PCB, and there are many very cheap PCB manufacturing services on the internet too. 
+
+I was just thinking about how I would go about making more of these if I wanted to give some out, and it rustled my jimmies how expensive the LCD was, so I researched new sources. Turns out I can get an LCD of the same resolution as mine for less than 10 bucks. I'll have to look into it.
+
+Another issue is that it costs $11 + shipping to get 5 boards with a nice 80x130mm ratio, but if I cut off those 30mm I can get it for $3. 
+
+I think I just need to suck it up and make a (really) shitty prototype, and go from there. I've been stressing about whether to put fancy piezo drivers and capacitive buttons on but I really just need to start simple I think. Push-buttons, maybe a piezo that makes simple tones, and an infrared LED just for fun.

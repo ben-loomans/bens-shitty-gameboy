@@ -1,0 +1,8 @@
+Gameboi Product Backlog (consult 295 lectures)
+
+Piezo speaker
+Sound synth for 8-bit music
+infrared LED for programming tv control
+Golden ratio size - may need to reduce length to 100mm for cheap prototype
+capacitive buttons
+capacitive sliders/joysticks

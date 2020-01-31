@@ -1,0 +1,26 @@
+SNAKE
+
+snake buffer is an array of a certain length which is at all times to be greater than that of the snake, I have chosen 256.
+
+The snake's new location is added to the next available index of the array, and when the array is full it is wrapped back around to location 0. This will be achieved using the mod (%) operator.
+
+the variable "head" is used to keep track of the index of the head of the snake, and the variable "length" is used to keep track of how many 'snake pixels' should be drawn to the screen in a particular frame.
+
+change_head(int value) {
+	int mod = value % SNAKE_BUF;
+	if (value < 0) {
+		mod += m;
+	}
+	return mod;
+}
+
+
+
+
+
+
+IR_RX
+
+Off state is a 1, so the input going low indicates the transmission has begun
+
+Once transmission has begun, loop every x microseconds and check if the state is the same as it was previously. If so, increment a counter. If not, save the value of the counter to an array, reset the counter to 0, and start again
