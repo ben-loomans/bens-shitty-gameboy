@@ -1,0 +1,2 @@
+In order to compile this code, the Arduino IDE and Teensy Add-On is required
+The code is written for a Teensy 3.2
