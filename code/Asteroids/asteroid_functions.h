@@ -51,6 +51,10 @@ uint8_t small_asteroid_bitmap[] = {
   0b11
 };
 
+Sprite asteroid(15, 15, 4, 4, med_asteroid_bitmap);
+Sprite asteroidb(26, 26, 6, 6, big_asteroid_bitmap);
+Sprite ship(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, 4, 4, ship_up_bitmap);
+
 void game() {
 
   clear_buffer();

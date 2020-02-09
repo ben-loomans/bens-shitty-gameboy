@@ -3,7 +3,7 @@
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 64
 
-char frame_buffer[SCREEN_HEIGHT/8][SCREEN_WIDTH];
+uint8_t frame_buffer[SCREEN_HEIGHT/8][SCREEN_WIDTH];
 
 void draw_bit(int x, int y, boolean data) {
   if (data) {
@@ -26,7 +26,7 @@ void draw_square(int x, int y) {
   draw_bit((x << 1) + 1, (y << 1) + 1, 1);
 }
 
-void draw_byte(int column, int page, char data, bool transparent) {
+void draw_byte(int column, int page, uint8_t data, bool transparent) {
 
   if (transparent) {
     
@@ -41,7 +41,7 @@ void draw_byte(int column, int page, char data, bool transparent) {
   return;
 }
 
-void draw_page(int page, char* data, bool transparent) {
+void draw_page(int page, uint8_t* data, bool transparent) {
   
   for (int column = 0; column < SCREEN_WIDTH; column++) {
     
@@ -52,7 +52,7 @@ void draw_page(int page, char* data, bool transparent) {
   return;
 }
 
-void draw_frame(char data[][SCREEN_WIDTH], bool transparent) {
+void draw_frame(uint8_t data[][SCREEN_WIDTH], bool transparent) {
   
   for (int page = 0; page < SCREEN_HEIGHT / 8; page++) {
     

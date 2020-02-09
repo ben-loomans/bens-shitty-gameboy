@@ -1,9 +1,9 @@
- #include "lcd_commands.h"
+  #include "lcd_commands.h"
 
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 64
 
-//char screen_buffer[SCREEN_WIDTH * SCREEN_HEIGHT / 8];
+//uint8_t screen_buffer[SCREEN_WIDTH * SCREEN_HEIGHT / 8];
  
 
 #define LCD_H
@@ -42,7 +42,7 @@ void init_pins() {
   
 }
 
-void out(char data) {
+void out(uint8_t data) {
   for (int i = 0; i < 8; i++) {
 
     SCL_LOW;
@@ -63,7 +63,7 @@ void out(char data) {
   }
 }
 
-void send_command(char data) {
+void send_command(uint8_t data) {
   CS_LOW;
   A0_COMM;
   DELAY;
@@ -74,7 +74,7 @@ void send_command(char data) {
   DELAY;
 }
 
-void send_data(char data) {
+void send_data(uint8_t data) {
   CS_LOW;
   A0_DATA;
   DELAY;
@@ -119,7 +119,7 @@ void init_lcd() {
   send_command(DISPLAY_ALL_OFF);
 }
 
-void update_screen(char frame_buffer[][SCREEN_WIDTH]) {
+void update_screen(uint8_t frame_buffer[][SCREEN_WIDTH]) {
   //send_command(DISPLAY_OFF);
   
   for (int page = 0; page < SCREEN_HEIGHT/8; page++) {

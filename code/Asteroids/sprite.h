@@ -21,6 +21,12 @@ class Sprite {
       bitmap = s_bitmap;
     };
 
+    void set_bitmap(int s_width, int s_height, uint8_t* s_bitmap) {
+       width = s_width;
+       height = s_height;
+       bitmap = s_bitmap;
+    }
+
     void draw() {
       int a, b;
       for (int i = 0; i < width; i++) {
